@@ -29,8 +29,76 @@ var question4 = "What can you use Javascript to do?"
 
 var question5 = "what is a for loop?"
 
+//var showTheScore = ?
+
+
+//keep track of the quiz answers and score
+const myQuestions = [
+    {
+      question: "What is a boolean?",
+      answers: {
+        a: "a boomrang",
+        b: "a true or false question",
+        c: "a long line of code",
+        d: "bad coding"
+        },
+      correctAnswer: "b"
+    },
+    {
+      question: "What does HTML stand for?",
+      answers: {
+        a: "hyper text markup language",
+        b: "here then make longer",
+        c: "help the margin length",
+        d: "how to mark logs"
+      },
+      correctAnswer: "a"
+    },
+    {
+      question: "How do you start a funtion?",
+      answers: {
+        a: ";",
+        b: "#",
+        c: "+",
+        d: "()"
+      },
+      correctAnswer: "d"
+    },
+    {
+    question: "What can you use Javascript to do?",
+    answers: {
+      a: "make your website interactive",   
+      b: "you can change text and colors",
+      c: "you can make alerts",
+      d: "all of the above"
+    },
+    correctAnswer: "d"
+    },
+    {
+    question: "what is a for loop?",
+    answers: {
+        a: "it is a statment that will run if a condition is false",
+        b: "it is a statemtn that will run if a condition is ture",
+        c: "it is the if then less than statment",
+        d: "it will enable a user to loop audio and video",   
+    },
+    correctAnswer: "b"
+    }]
+
 const quizContainer = document.getElementById('quiz');
 
 const resultsContainer = document.getElementById('results');
 
 const submitButton = document.getElementById('submit');
+
+function answerQuestions() {
+
+}
+
+function addUpTheScore() {
+
+}
+
+//submitButton.addEventListener('click', goToNextQuestion);
+
+submitButton.addEventListener('click', showTheScore);
