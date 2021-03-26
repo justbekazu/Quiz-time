@@ -4,34 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QUIZ TIME</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <link href="assets/style.css" rel="stylesheet">
+    <title>Quiz Me</title>
+    <script defer src="assets/quiz.js"></script>
 </head>
 <body>
-  <header>
-    <h1 class="title">Quiz Time</h1>
-    <h2 id="welcome-banner"></h2>
-
-  </header>
-
-<main class="questionsandanswers">
-  <div id="quiz">
-  </div>
-  
-
-  
-  <div id="results">
-  </div>
-
-  <div id="your score is">
-  </div>
-
-
-
-</main>
+    <p id="countdown">.60</p>
+    <div class="container"> 
+        <div id="question-container" class="hide">
+            <div id="questions">Questions</div> 
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Option 1</button>
+                <button class="btn">Option 2</button>
+                <button class="btn">Option 3</button>
+                <button class="btn">Option 4</button>
+            </div>  
+        </div>
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+        </div>
+    </div> 
     
-
-  <script src="assets/Quiz.js"></script>
 </body>
 
 
