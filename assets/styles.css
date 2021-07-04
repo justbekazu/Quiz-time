@@ -1,0 +1,99 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+:root {
+  --hue-neutral: 300;
+  --hue-wrong: 5;
+  --hue-correct: 175;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 100wh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(208, 164, 164);
+  --hue: var(--hue-neutral);
+  background-color: hsl(var(--hue), 100%, 25%);
+}
+
+body.correct {
+  --hue: var (--hue-correct);
+}
+
+body.wrong {
+  --hue: var(--hue-wrong);
+}
+
+p {
+  background-color: blanchedalmond;
+  display: inline-flex;
+  align-items: flex-end;
+  font-size: medium;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 800px;
+  max-width: 80%;
+  background-color: rgb(237, 226, 144);
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.btn {
+  box-shadow: 0 0 10px 1px;
+  border-radius: 6px;
+  padding: 5px 10px;
+  background-color: rgb(198, 166, 166);
+  outline: none;
+  color: rgb(94, 110, 122);
+}
+
+.btn:hover {
+  border-color: rgb(113, 101, 101);
+}
+
+.btn.correct {
+  --hue: var (--hue-correct);
+}
+
+.btn.wrong {
+  --hue: var(--hue-wrong);
+}
+
+.start-btn,
+.next-btn {
+  font-size: 2rem;
+  padding: 10px 20px;
+  color: black;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+.countdown {
+  font-size: larger;
+}
