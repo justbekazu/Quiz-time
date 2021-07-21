@@ -97,3 +97,12 @@ p {
 .countdown {
   font-size: larger;
 }
+
+.timer {
+  columns: 12;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin: inherit;
+  background-color: rgb(237, 226, 144);
+}
